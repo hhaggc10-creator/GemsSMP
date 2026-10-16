@@ -1,0 +1,39 @@
+# GemsSMP configuration
+
+# random = every new player gets a random gem on first join, none = nobody gets one automatically
+first-join-gem: random
+
+# The gem stays with the player when they die instead of dropping
+keep-gem-on-death: true
+
+# A player who dies has their gem drop back to Tier 1
+lose-tier-on-death: true
+
+# Killing a player who was carrying a gem upgrades your gem to Tier 2
+upgrade-on-kill: true
+
+# Cooldowns are in seconds. Tier 2 gems are stronger and recharge faster.
+gems:
+  fire:
+    cooldown-tier1: 60
+    cooldown-tier2: 40
+    radius: 7
+  speed:
+    cooldown-tier1: 40
+    cooldown-tier2: 25
+  strength:
+    cooldown-tier1: 70
+    cooldown-tier2: 50
+    radius: 6
+  life:
+    cooldown-tier1: 80
+    cooldown-tier2: 55
+    radius: 6
+  shadow:
+    cooldown-tier1: 45
+    cooldown-tier2: 30
+    range: 14
+  storm:
+    cooldown-tier1: 75
+    cooldown-tier2: 55
+    radius: 14

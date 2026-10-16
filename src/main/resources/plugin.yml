@@ -1,0 +1,14 @@
+name: GemsSMP
+version: ${project.version}
+main: dev.gemsmp.GemsPlugin
+api-version: '1.21'
+description: Gem powers for your SMP
+commands:
+  gems:
+    description: Gem commands
+    usage: /gems <list|use|give|trust|untrust|trusted|reload>
+    aliases: [gem]
+permissions:
+  gems.admin:
+    description: Give gems and reload the config
+    default: op
